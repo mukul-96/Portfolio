@@ -12,6 +12,11 @@ import typescript from './icons/typescript.png';
 import graphql from './icons/graphql.png';
 import postgresql from './icons/postgresql.png';
 import rubyrails from './icons/rubyrails.png';
+import nairobi from './background/nairobi.png';
+import triangle from './background/pngwing.com.png';
+import map from './background/world-map.png';
+import frontend from './icons/frontend.png';
+import backend from './icons/backend.png';
 
 export {
     css,
@@ -28,5 +33,9 @@ export {
     redux,
     tailwind,
     typescript,
-    
+    nairobi,
+    triangle,
+    map,
+    frontend,
+    backend
   };

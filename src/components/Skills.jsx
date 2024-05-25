@@ -1,4 +1,5 @@
 import { technologies } from "../constants";
+import { nairobi } from "../assets";
 const Skills=()=>{
 const SkillCard=({icon})=>{
     return(
@@ -10,7 +11,7 @@ const SkillCard=({icon})=>{
 
 return(
     <div className="w-screen h-[100vh] overflow-hidden bw-gradient ">
-    <div className="z-[-1] absolute h-full w-full overflow-hidden"><img src="src\assets\background\nairobi.png" className="top-[-190px] absolute"></img></div>
+    <div className="z-[-1] absolute h-full w-full overflow-hidden"><img src={nairobi} className="top-[-190px] absolute"></img></div>
     <div className=" z-2  ml-[200px] mr-[200px] mt-[80px]">
     
     <div className="sm:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold    font-poppins text-gray-400">MY SKILLS</div>

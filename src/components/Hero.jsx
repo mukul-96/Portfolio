@@ -1,9 +1,9 @@
-
+import { map } from "../assets";
     const Hero=()=>{
         return(
         <div className="  w-screen h-[100vh]  overflow-hidden ">
         
-            <img src="src/assets/background/world-map.png" className="scale-[0.85] absolute h-full  w-screen "></img>
+            <img src={map} className="scale-[0.85] absolute h-full  w-screen "></img>
                 <div className="z-10  mt-[150px] flex-col flex absolute " >
                     <div className='relative  left-[200px] overflow-hidden'>
                         <h1 className="font-black text-eerieBlack lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[90px] mt-2 text-eerieBlack font-poppins uppercase">Hi,i'M</h1>

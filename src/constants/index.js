@@ -14,16 +14,18 @@ import {
   postgresql,
   rubyrails,
   graphql,
+  frontend,
+  backend
 } from '../assets';
 
 const services = [
     {
       title: 'Frontend Developer',
-      icon: "src/assets/icons/backend.png",
+      icon: frontend,
     },
     {
       title: 'Backend Developer',
-      icon: "src/assets/icons/backend.png",
+      icon: backend,
     },
   ];
   const technologies = [
