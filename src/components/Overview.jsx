@@ -1,20 +1,26 @@
 import { services } from "../constants";
 import Card from "./Card";
-const Overview=()=>{
-return(
-    <div className="flex-col h-[100vh] w-screen ml-[200px]">
-        <div className="mt-[130px] " >
-            <div className="sm:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold font-poppins">INTRODUCTION</div>
-            <h1 className="text-eerieBlack font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins">Overview.</h1>
-            <div className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea quaerat alias accusamus voluptas autem! Alias odit voluptates in totam vitae dignissimos minus eaque culpa unde tempore dolore aperiam obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde veniam dolorum ipsum doloribus.</div>
+
+const Overview = () => {
+    return (
+        <div id="about"  className="flex flex-col justify-center items-center py-12 px-4 md:px-8 lg:px-16">
+            <div className="mt-12 max-w-3xl text-center">
+                <div className="sm:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold font-poppins">INTRODUCTION</div>
+                <h1 className="text-eerieBlack font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins mt-4">
+                    Overview.
+                </h1>
+                <p className="mt-4 text-taupe text-[18px] leading-[30px]">
+                I am a passionate and detail-oriented full-stack developer with a keen focus on creating impactful and user-centric web applications. My journey in software development is driven by a blend of curiosity, creativity, and a relentless pursuit of excellence. With a strong foundation in both frontend and backend technologies, I thrive on crafting seamless digital experiences that balance form and function.
+                </p>
+            </div>
+
+            <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {services.map((service) => (
+                    <Card key={service.id} icon={service.icon} title={service.title} />
+                ))}
+            </div>
         </div>
-        {/* cards */}
-        <div className="mt-20 flex flex-wrap gap-10 ">
-           { services.map((service)=>(
-                <Card key={service.id} icon={service.icon} title={service.title}  ></Card>
-            ))}
-        </div>
-    </div>
-)
-}
- export default Overview;
+    );
+};
+
+export default Overview;

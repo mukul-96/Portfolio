@@ -1,27 +1,29 @@
-import { map } from "../assets";
-    const Hero=()=>{
-        return(
-        <div className="  w-screen h-[100vh]  overflow-hidden ">
-        
-            <img src={map} className="scale-[0.85] absolute h-full  w-screen "></img>
-                <div className="z-10  mt-[150px] flex-col flex absolute " >
-                    <div className='relative  left-[200px] overflow-hidden'>
-                        <h1 className="font-black text-eerieBlack lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[90px] mt-2 text-eerieBlack font-poppins uppercase">Hi,i'M</h1>
-                        <span className="sm:text-battleGray sm:text-[90px] 
-                    text-eerieBlack text-[50px] font-mova
-                    font-extrabold uppercase"> MUKUL</span>
-                    
-                    </div>
-                    <div className="text-eerieBlack font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2 text-eerieBlack relative left-[200px] overflow-hidden">Lorem ipsum dolor,<br/> 
-                    sit amet consectetur adipisicing elit.<br/> 
-                    Ea, soluta. </div>
-                </div>
-                <div className="absolute top-0 left-[570px] w-full h-full overflow-hidden">
-                <img src="src/assets/background/pngwing.com.png" className="scale-[2] opacity-90 h-full" alt="Overlay image" />
-            </div>
-                 
-                
-        </div>
-        )
-    }
-    export default Hero;
+import React from 'react';
+import { map } from '../assets'; 
+
+const Hero = () => {
+  return (
+    <div className="relative w-full h-screen overflow-hidden flex items-center bg-no-repeat bg-cover">
+      <img
+        src={map}
+        alt="Background map"
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        style={{ objectFit: 'cover' }}
+      />
+
+      <div className="relative z-10 flex flex-col items-start text-left px-4 sm:px-8 md:px-12 lg:px-20 w-full max-w-5xl ml-10">
+        <h1 className="font-black text-eerieBlack text-4xl xs:text-5xl sm:text-6xl lg:text-8xl uppercase leading-tight font-poppins">
+          Hi, I'M
+        </h1>
+        <span className="font-extrabold text-battleGray text-5xl sm:text-7xl lg:text-9xl uppercase mt-4">
+          MUKUL
+        </span>
+        <p className="font-medium text-eerieBlack text-base xs:text-lg sm:text-xl lg:text-2xl lg:leading-10 mt-6">
+        <p>I'm a software developer and here is my portfolio</p> <p>website.Here you'll learn about</p> <p>my journey as a software developer.</p>
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;

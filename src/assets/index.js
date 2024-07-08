@@ -17,6 +17,7 @@ import triangle from './background/pngwing.com.png';
 import map from './background/world-map.png';
 import frontend from './icons/frontend.png';
 import backend from './icons/backend.png';
+import oneVote from './icons/oneVote.png';
 
 export {
     css,
@@ -37,5 +38,6 @@ export {
     triangle,
     map,
     frontend,
-    backend
+    backend,
+    oneVote,
   };

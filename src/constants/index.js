@@ -1,4 +1,3 @@
-// import{frontend,} from '../assets/icons'
 import {
   javascript,
   typescript,
@@ -15,7 +14,8 @@ import {
   rubyrails,
   graphql,
   frontend,
-  backend
+  backend,
+  oneVote,
 } from '../assets';
 
 const services = [
@@ -49,10 +49,7 @@ const services = [
       name: 'React JS',
       icon: reactjs,
     },
-    {
-      name: 'Redux Toolkit',
-      icon: redux,
-    },
+    
     {
       name: 'Tailwind CSS',
       icon: tailwind,
@@ -61,14 +58,7 @@ const services = [
       name: 'Node JS',
       icon: nodejs,
     },
-    {
-      name: 'Rails',
-      icon: rubyrails,
-    },
-    {
-      name: 'graphql',
-      icon: graphql,
-    },
+   
     {
       name: 'postgresql',
       icon: postgresql,
@@ -78,12 +68,8 @@ const services = [
       icon: git,
     },
     {
-      name: 'figma',
-      icon: figma,
-    },
-    {
       name: 'docker',
       icon: docker,
     },
   ];
-export {services,technologies};  
+export {services,technologies,oneVote};  
